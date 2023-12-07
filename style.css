@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#grid {
+    display: flex;
+    width: 920px;
+    height: 920px;
+    border: 1px solid;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+
+#grid-interface {
+   
+    border: 1px solid;
+
+}
+
+.case-size {
+    width: 5%;
+    height: 5%;
+}
+
+.case {
+    border: 1px solid;
+    border-color: dimgray;
+}

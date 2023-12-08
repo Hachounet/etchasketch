@@ -3,28 +3,63 @@
     padding: 0px;
 }
 
-#grid {
+:root {
+    --inputUserSize: 16;
+}
+
+#bottom {
     display: flex;
-    width: 920px;
-    height: 920px;
-    border: 1px solid;
+    justify-content: center;
+    gap: 64px;
+}
+
+#usermenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+
+}
+
+#grid {
+    
+    width: 480px;
+    height: 480px;
+    border: 10px solid;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-color : #0a2733;
+    background-color: linen;
     flex-wrap: wrap;
-    flex: 1 1 auto;
+    display: flex;
 }
 
 
-#grid-interface {
-   
-    border: 1px solid;
 
-}
-
-.case-size {
-    width: 5%;
-    height: 5%;
-}
 
 .case {
-    border: 1px solid;
-    border-color: dimgray;
+    box-sizing: border-box;
+    width: calc(100% /var(--inputUserSize));
+    height: calc(100% /var(--inputUserSize));
+}
+
+.top-round-rainbow {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    height: 48px;
+    width: 156px;
+    background-color: #0a2733;
+    border-radius: 18px;
+}
+
+.buttons {
+
+   border: 2px solid;
+   border-color: #8a667a;
+   height : 48px;
+   width: 156px;
+   background-color: #0a2733;
+   border-radius: 18px;
+   color: thistle;
 }
